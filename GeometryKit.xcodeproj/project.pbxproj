@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6330430F2483AAF90076753A /* GeometryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633043052483AAF90076753A /* GeometryKit.framework */; };
 		633043142483AAF90076753A /* GeometryKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633043132483AAF90076753A /* GeometryKitTests.swift */; };
 		633043162483AAF90076753A /* GeometryKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 633043082483AAF90076753A /* GeometryKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		633043202483AC0A0076753A /* GeometryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633043052483AAF90076753A /* GeometryKit.framework */; };
+		633043212483AC0F0076753A /* GeometryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633043052483AAF90076753A /* GeometryKit.framework */; };
+		633043362483ADB20076753A /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633043352483ADB20076753A /* Circle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		6330430E2483AAF90076753A /* GeometryKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeometryKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		633043132483AAF90076753A /* GeometryKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryKitTests.swift; sourceTree = "<group>"; };
 		633043152483AAF90076753A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		633043352483ADB20076753A /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633043212483AC0F0076753A /* GeometryKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6330430F2483AAF90076753A /* GeometryKit.framework in Frameworks */,
+				633043202483AC0A0076753A /* GeometryKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +77,7 @@
 			children = (
 				633043082483AAF90076753A /* GeometryKit.h */,
 				633043092483AAF90076753A /* Info.plist */,
+				633043352483ADB20076753A /* Circle.swift */,
 			);
 			path = GeometryKit;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				TargetAttributes = {
 					633043042483AAF90076753A = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					6330430D2483AAF90076753A = {
 						CreatedOnToolsVersion = 11.4.1;
@@ -195,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633043362483ADB20076753A /* Circle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +347,7 @@
 		6330431A2483AAF90076753A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4AR488G66N;
@@ -356,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MyOrg.GeometryKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +373,7 @@
 		6330431B2483AAF90076753A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4AR488G66N;
@@ -388,6 +398,7 @@
 		6330431D2483AAF90076753A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AR488G66N;
 				INFOPLIST_FILE = GeometryKitTests/Info.plist;
@@ -406,6 +417,7 @@
 		6330431E2483AAF90076753A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4AR488G66N;
 				INFOPLIST_FILE = GeometryKitTests/Info.plist;
