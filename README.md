@@ -7,7 +7,7 @@ run 'pod init' from your terminal
 a podfile will be generated in the current diectory
 
 Type following syntax in your podfile
-pod 'GeometryKit' , :git => 'https://github.com/ihasib/GeometryKit/tree/master'
+pod 'GeometryKit' , :git => 'https://github.com/ihasib/GeometryKit.git'
 
 run 'pod install' from your terminal
 
